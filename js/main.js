@@ -13,6 +13,7 @@ track = document.querySelector('#track');
 
 transcript = document.querySelector('#transcript');
 transcriptBox = document.querySelector('.transcript');
+movieTitle = document.querySelector('#movieTitle');
 
 
 
@@ -54,11 +55,13 @@ playpause.addEventListener('click', function(){
 changeVideoST.addEventListener('click', function(){
     vidPlayer.src = 'video/strangerthings.mp4';
     track.src = "video/strangerthings.vtt";
+    movieTitle.innerHTML = "Stranger Things";
 })
 
 changeVideoAvengers.addEventListener('click', function(){
     vidPlayer.src = 'video/avengers.mp4';
     track.src = "video/avengers.vtt";
+    movieTitle.innerHTML = "The Avengers Endgame";
 })
 
 })();
